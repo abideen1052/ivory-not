@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# Ivory Notifications App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native mobile application built with [Expo](https://expo.dev) that features a high-performance notification feed with search functionality, optimized list rendering, and a clean UI.
 
-## Get started
+## Prerequisites
 
-1. Install dependencies
+Before you begin, ensure you have met the following requirements:
 
-   ```bash
-   npm install
-   ```
+- **Node.js**: Download and install [Node.js](https://nodejs.org/) (LTS version recommended).
+- **Git**: [Download Git](https://git-scm.com/).
+- **Expo Go**: Install the Expo Go app on your [iOS](https://apps.apple.com/us/app/expo-go/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) device (optional, for physical device testing).
 
-2. Start the app
+## Installation
 
-   ```bash
-   npx expo start
-   ```
+1.  **Clone the repository:**
 
-In the output, you'll find options to open the app in a
+    ```bash
+    git clone https://github.com/abideen1052/ivory-not.git
+    cd ivory-not
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+2.  **Install dependencies:**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-## Get a fresh project
+## Running the App
 
-When you're ready, run:
+1.  **Start the development server:**
 
-```bash
-npm run reset-project
-```
+    ```bash
+    npm start
+    ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2.  **Run on a specific platform:**
+    - **Android Emulator/Device:**
 
-## Learn more
+      ```bash
+      npm run android
+      ```
 
-To learn more about developing your project with Expo, look at the following resources:
+      _Make sure you have an Android Emulator running or a physical device connected via USB with debugging enabled._
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+    - **iOS Simulator (macOS only):**
 
-## Join the community
+      ```bash
+      npm run ios
+      ```
 
-Join our community of developers creating universal apps.
+      _Requires Xcode installed._
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3.  **Using Expo Go (Physical Device):**
+    - Start the server with `npm start`.
+    - Scan the QR code displayed in the terminal using the Expo Go app (Android) or the Camera app (iOS).

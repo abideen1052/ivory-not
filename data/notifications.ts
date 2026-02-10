@@ -5,15 +5,15 @@ export interface NotificationItem {
   type: NotificationType;
   title: string;
   body: string;
-  createdAt: number; // timestamp
+  createdAt: number;
   isRead: boolean;
 }
 
 export const TYPE_COLORS: Record<NotificationType, string> = {
-  info: "#3B82F6", // Blue
-  success: "#22C55E", // Green
-  error: "#EF4444", // Red
-  warning: "#A855F7", // Purple
+  info: "#3B82F6",
+  success: "#22C55E",
+  error: "#EF4444",
+  warning: "#A855F7",
 };
 
 const TITLES = [
@@ -42,7 +42,7 @@ export const generateMockNotifications = (count = 100): NotificationItem[] => {
     type: TYPES[i % TYPES.length],
     title: TITLES[i % TITLES.length],
     body: BODIES[i % BODIES.length],
-    createdAt: Date.now() - i * 1000 * 60 * 5, // every 5 mins
+    createdAt: Date.now() - i * 1000 * 60 * 5,
     isRead: Math.random() > 0.5,
   }));
 };

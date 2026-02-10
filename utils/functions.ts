@@ -14,7 +14,7 @@ export const fetchNotifications = async ({
   limit: number;
   search: string;
 }): Promise<NotificationItem[]> => {
-  await new Promise((res) => setTimeout(res, 300)); // network delay
+  await new Promise((res) => setTimeout(res, 300));
 
   const filtered = ALL_NOTIFICATIONS.filter(
     (n) =>
